@@ -46,7 +46,7 @@ $(function(){
 		var target = $(i).offset().top;
 		var $doc = $("html,body");
 		
-		$doc.animate({"scrollTop":target},10,"swing");	
+		$doc.animate({"scrollTop":target},100,"swing");	
 		
 	});	
 	
@@ -64,37 +64,43 @@ $(function(){
 		if( scroll>=posBox1 && scroll <posBox2){
 			$(".navi li a, #gnb>li>a").removeClass("on");
 			$(".navi li").eq(0).children("a").addClass("on");					
-			$("#gnb>li").eq(0).children("a").addClass("on");	
+			$("#gnb>li").eq(0).children("a").addClass("on");
+            
 		}
 		
 		if( scroll>=posBox2 && scroll <posBox3){
 			$(".navi li a, #gnb>li>a").removeClass("on");
 			$(".navi li").eq(1).children("a").addClass("on");				
-			$("#gnb>li").eq(1).children("a").addClass("on");	
+			$("#gnb>li").eq(1).children("a").addClass("on");
+            
 		}
 		
 		if( scroll>=posBox3 && scroll <posBox4){
 			$(".navi li a, #gnb>li>a").removeClass("on");
 			$(".navi li").eq(2).children("a").addClass("on");				
-			$("#gnb>li").eq(2).children("a").addClass("on");	
+			$("#gnb>li").eq(2).children("a").addClass("on");
+            
 		}
 		
 		if( scroll>=posBox4-1 && scroll <posBox5){
 			$(".navi li a, #gnb>li>a").removeClass("on");
 			$(".navi li").eq(3).children("a").addClass("on");				
-			$("#gnb>li").eq(3).children("a").addClass("on");	
+			$("#gnb>li").eq(3).children("a").addClass("on");
+            
 		}
 		
 		if( scroll>=posBox5-1 && scroll <posBox6 ){
 			$(".navi li a, #gnb>li>a").removeClass("on");
 			$(".navi li").eq(4).children("a").addClass("on");			
-			$("#gnb>li").eq(4).children("a").addClass("on");	
+			$("#gnb>li").eq(4).children("a").addClass("on");
+            
 		}	
         
         if( scroll>=posBox6-1 ){
 			$(".navi li a, #gnb>li>a").removeClass("on");
 			$(".navi li").eq(5).children("a").addClass("on");			
-			$("#gnb>li").eq(5).children("a").addClass("on");	
+			$("#gnb>li").eq(5).children("a").addClass("on");
+            
 		}	
 		
 	});
