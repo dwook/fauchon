@@ -63,11 +63,14 @@ $(window).on("scroll",function(){
         $(".navi li a, #gnb>li>a").removeClass("on");
         $(".navi li").eq(0).children("a").addClass("on");					
         $("#gnb>li").eq(0).children("a").addClass("on");
+        $(".rb").addClass("on");
+
 
     }
 
     if( scroll>=posBox2 && scroll <posBox3){
         $(".navi li a, #gnb>li>a").removeClass("on");
+        $(".rb").removeClass("on");
         $(".navi li").eq(1).children("a").addClass("on");				
         $("#gnb>li").eq(1).children("a").addClass("on");
 
@@ -76,6 +79,7 @@ $(window).on("scroll",function(){
 
     if( scroll>=posBox3 && scroll <posBox4){
         $(".navi li a, #gnb>li>a").removeClass("on");
+        $(".rb").removeClass("on");
         $(".navi li").eq(2).children("a").addClass("on");				
         $("#gnb>li").eq(2).children("a").addClass("on");
 
@@ -84,6 +88,7 @@ $(window).on("scroll",function(){
 
     if( scroll>=posBox4-1 && scroll <posBox5){
         $(".navi li a, #gnb>li>a").removeClass("on");
+        $(".rb").removeClass("on");
         $(".navi li").eq(3).children("a").addClass("on");				
         $("#gnb>li").eq(3).children("a").addClass("on");
 
@@ -91,6 +96,7 @@ $(window).on("scroll",function(){
 
     if( scroll>=posBox5-1 && scroll <posBox6 ){
         $(".navi li a, #gnb>li>a").removeClass("on");
+        $(".rb").removeClass("on");
         $(".navi li").eq(4).children("a").addClass("on");			
         $("#gnb>li").eq(4).children("a").addClass("on");
 
@@ -100,6 +106,7 @@ $(window).on("scroll",function(){
         $(".navi li a, #gnb>li>a").removeClass("on");
         $(".navi li").eq(5).children("a").addClass("on");			
         $("#gnb>li").eq(5).children("a").addClass("on");
+        $(".rb").addClass("on");
 
     }	
 });
