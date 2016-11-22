@@ -5,7 +5,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 { margin:0;  padding:0;}
 table {border-collapse:collapse; border-spacing:0;}
 input,select { vertical-align:top; padding:0;}
-fieldset,img {border:0; vertical-align:top;}
+fieldset,img {border:0;}
 address,caption,cite,code,dfn,var {font-style:normal; font-weight:normal; }
 ol,ul {list-style: none; }
 caption,th { text-align:left;}
@@ -17,10 +17,12 @@ body { font: 12px /1.4 arial, sans-serif; color:#666; overflow-x:hidden;}
 .h { position:absolute; top:-99999px;}
 
 
-#header {width:100vw; height:100vh; background-color:pink; position:fixed; font:bold 16px "arial";transition: all 0.4s ease;}
+#header {width:100vw; height:100vh; background-color:black; position:fixed; font:bold 16px "arial";transition: all 0.4s ease;background-image: url(../img/bg.png);background-position: center top;background-attachment: fixed;background-repeat: no-repeat;overflow: hidden;}
 #header.sticky {width:100%;height:10vh;font-size:12px;}
-#header img{position:absolute;top:10%;left:50%;transform:translateX(-50%); width:200px;}
-#header.sticky img{width:150px;}
+#header h1 img{position:absolute;top:10%;left:50%;transform:translateX(-50%); width:200px;z-index: 100;}
+#header.sticky h1 img{width:150px;}
+.left{position: absolute; left: 0px; top: 0px;opacity: 0.5;}
+.right{position: absolute; right: 0px; top: 0px;opacity: 0.5;}
 
 
 #gnb{position:absolute; bottom:10%; left:50%;transform:translateX(-50%);}
@@ -32,7 +34,7 @@ body { font: 12px /1.4 arial, sans-serif; color:#666; overflow-x:hidden;}
 
 .box {width:100vw; height:100vh;overflow:hidden;}
 /*box포지션 relative하니까 header 안나옴..*/
-#box1 {background-color: #000;}
+#box1 {background-image: url(../img/bg.png);background-position: center top;background-attachment: fixed;background-repeat: no-repeat;}
 #box2 {background-color: #222;}
 #box3 {background-color: #444;}
 #box4 {background-color: #666;}
