@@ -73,12 +73,14 @@ $(function(){
 			$(".navi li").eq(1).children("a").addClass("on");				
 			$("#gnb>li").eq(1).children("a").addClass("on");
             
+            
 		}
 		
 		if( scroll>=posBox3 && scroll <posBox4){
 			$(".navi li a, #gnb>li>a").removeClass("on");
 			$(".navi li").eq(2).children("a").addClass("on");				
 			$("#gnb>li").eq(2).children("a").addClass("on");
+            
             
 		}
 		
