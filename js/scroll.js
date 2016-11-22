@@ -1,3 +1,10 @@
+$(function() {
+            $.scrollify({
+                section : ".box",
+            });
+        });
+
+
 
 $(function(){	
 
@@ -60,7 +67,8 @@ $(function(){
 		var posBox3 = $("#box3").offset().top;
 		var posBox4 = $("#box4").offset().top;
 		var posBox5 = $("#box5").offset().top;		
-		var posBox6 = $("#box6").offset().top;	
+		var posBox6 = $("#box6").offset().top;
+        
         
 		if( scroll>=posBox1 && scroll <posBox2){
 			$(".navi li a, #gnb>li>a").removeClass("on");
