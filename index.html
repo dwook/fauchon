@@ -3,14 +3,28 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
 	<title> Fauchon </title>	
-	<link rel="stylesheet" href="css/style.css" />	
+	<link rel="stylesheet" href="css/style.css" />
+    	
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/prefixfree.min.js"></script> 
 	<script type="text/javascript" src="js/scroll.js"></script> 
+    <script type="text/javascript" src="js/jquery.scrollify.js"></script> 
+    <script>
+        $(function() {
+            $.scrollify({
+                section : ".box",
+            });
+        });
+    </script>
+	
+	
 	
 </head>
 <body>
 
+
+<div class="docScroller">
     <div id="header">
         <h1><a href="#box1"><img src="img/logo.svg"/></a></h1>
         
@@ -25,26 +39,26 @@
         
     </div>
   
-  
-    <div id="contents">
-        <div id="box1" class="box">
-        </div>
 
-        <div id="box2" class="box">
-        </div>
-
-        <div id="box3" class="box">
-        </div>
-
-        <div id="box4" class="box">
-        </div>
-
-        <div id="box5" class="box">
-        </div>
-
-        <div id="box6" class="box">
-        </div>
+   
+    <div id="box1" class="box">
     </div>
+
+    <div id="box2" class="box">
+    </div>
+
+    <div id="box3" class="box">
+    </div>
+
+    <div id="box4" class="box">
+    </div>
+
+    <div id="box5" class="box">
+    </div>
+
+    <div id="box6" class="box">
+    </div>
+</div>
 		
 		
 	
