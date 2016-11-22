@@ -30,7 +30,22 @@ body { font: 12px /1.4 arial, sans-serif; color:#666; overflow-x:hidden;}
 #gnb>li>a {display:inline-block;color:#fff; cursor:pointer;}
 #gnb>li>a.on { color:#d01964; }
 
-  
+
+.imggrp {}
+.imggrp img:nth-child(1) {position:absolute; top:40%; left:50%;transform:translateX(-54%) translateY(-50%);}
+
+.imggrp img:nth-child(2) {position:absolute; top:40%; left:44%;transform:translateX(-160%) translateY(60%);}
+.imggrp img:nth-child(3) {position:absolute; top:40%; left:48%;transform:translateX(-110%) translateY(50%);}
+.imggrp img:nth-child(4) {position:absolute; top:40%; left:48%;transform:translateX(15%) translateY(60%);z-index:50;}
+.imggrp img:nth-child(5) {position:absolute; top:40%;right:48%;transform:translateX(170%) translateY(-10%);}
+
+
+
+
+.imggrp img:nth-child(6) {position:absolute; top:35%; left:50%;transform:translateX(-50%) translateY(-50%);z-index:50;}
+
+
+
 
 .box {width:100vw; height:100vh;overflow:hidden;}
 /*box포지션 relative하니까 header 안나옴..*/
