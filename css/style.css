@@ -141,6 +141,116 @@ article h2{font-size: 2rem; text-align: center;font-family:'Abril Fatface', curs
 article p{padding-top:1rem;font-family: 'Roboto', sans-serif;line-height: 1.5;text-align: justify;}
 
 
+/*기프트세트*/
+.figureset{width: 800px; position:relative;top: 100px;left:50%;transform: translateX(-50%);   
+}
+
+figure.snip1162 {
+  font-family: 'Roboto', Arial, sans-serif;      
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 250px;
+  max-height: 250px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+figure.snip1162 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+figure.snip1162 img {
+  max-width: 100%;
+  position: relative;
+  opacity: 1;
+}
+figure.snip1162 figcaption {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  right: 7%;
+  bottom: 50%;
+  border: 1px solid white;
+  border-width: 0 1px 1px;
+  background-color: rgba(0,0,0,0.8);
+}
+figure.snip1162 .heading {
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+figure.snip1162 h2 {
+  font-size:  20px;
+  display: table;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  font-weight: 900;
+  text-shadow:  0 -2px 4px rgba(0,0,0,1);
+}
+
+figure.snip1162 h2:before,
+figure.snip1162 h2:after {
+  position: absolute;
+  display: block;
+  width: 1000%;
+  height: 1px;
+  content: '';
+  background: white;
+  top: 50%;
+}
+figure.snip1162 h2:before {
+  left: -1000%;
+}
+figure.snip1162 h2:after {
+  right: -1000%;
+}
+figure.snip1162 p {
+  top: 50%;
+  font-size: 0.9em;
+  font-weight: 500;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+  opacity: 0;
+}
+figure.snip1162 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.snip1162:hover img,
+figure.snip1162.hover img {
+  opacity: 0.2;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+figure.snip1162:hover figcaption,
+figure.snip1162.hover figcaption {
+  top: 7%;
+  bottom: 7%;
+}
+figure.snip1162:hover p,
+figure.snip1162.hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+
 
 /*스페셜오더*/
 .specialOrder{width:400px;height:320px;position: absolute;top: 65%;left:50%;transform: translateX(-50%) translateY(-50%);padding:1rem;box-sizing: border-box;background-color: rgba(255,255,255,0.9);border-radius: 3px;

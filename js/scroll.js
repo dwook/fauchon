@@ -809,7 +809,12 @@ $(window).on("scroll",function(){
 
 	
 	
-
+// 기프트
+  $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
 
 
 
