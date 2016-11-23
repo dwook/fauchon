@@ -17,7 +17,7 @@ body { font: 12px /1.4 arial, sans-serif; color:#666; overflow-x:hidden;    -web
 .h { position:absolute; top:-99999px;}
 
 /*헤더*/
-#header {width:100vw; height:100vh; background-color:black; position:fixed; font:bold 1.2rem "arial";transition: all 0.4s ease;background-image: url(../img/bg.png);background-position: center top;background-attachment: fixed;background-repeat: no-repeat;overflow: hidden;z-index:10;}
+#header {width:100vw; height:100vh; background-color:black; position:fixed; font:bold 1.2rem "arial";transition: all 0.4s ease;background-image: url(../img/bg.png);background-position: center top;background-attachment: fixed;background-repeat: no-repeat;overflow: hidden;z-index:10;font-family: 'Roboto', sans-serif;font-weight: 900;}
 #header.sticky {width:100%;height:15vh;font-size:0.8rem;}
 #header.sticky .imggrp{display: none;}
 #header h1 img{position:absolute;top:10%;left:50%;transform:translateX(-50%); width:180px;z-index: 150;}
@@ -70,12 +70,46 @@ body { font: 12px /1.4 arial, sans-serif; color:#666; overflow-x:hidden;    -web
 .box {width:100vw; height:100vh;overflow:hidden;background-position: 0 10vh;background-attachment: fixed; background-repeat: no-repeat;background-size: cover;}
 /*box포지션 relative하니까 header 안나옴..*/
 #box1 {background-image: url(../img/bg.png);}
-#box2 {background-image: url(../img/bg1.png);}
+#box2 {background-image: url(../img/bg11.png);background-color:#d01964;}
 #box3 {background-image: url(../img/bg2.png);}
 #box4 {background-color: #000;}
 #box5 {background-image: url(../img/bg3.png);}
 #box6 {background-image: url(../img/bg4.png);position: relative;}
 
+
+
+
+.anchor1 {position: relative;top:30%;}
+.anchor1 article{color:#000;}
+.anchor2 {position: relative;top:30%;}
+.anchor2 article{color:#000;}
+.anchor3 {position: relative;top:30%;z-index: 1000;}
+.anchor4 {position: relative;top:30%;}
+
+/*카루셀*/
+.carousel {
+    width:800px;
+    height: 300px;
+    display: relative;
+    top: 65%;left:50%;transform: translateX(-50%) translateY(-50%);
+    
+}
+
+.carousel img{
+   
+    display: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */
+}
+
+.carousel span{ display: inline-block; width: 110px; height: 14px; font-size:0.7rem; color:#fff; background-color: #d01964;text-align: center;position: absolute; bottom: -2%;left:50%;transform: translateX(-50%);z-index: 100;padding: 10px;border: none;font-weight: bold;text-align:center;border-radius:2px;padding-top: 8px;}
+
+
+.carousel span:hover {background-color: #861040;}
+
+
+
+
+/*에끌레어비디오*/
 video {
 position: relative;
 top: 50%;
@@ -88,6 +122,10 @@ height: 100%;
 opacity: 0.9;
 z-index: -100;
 }
+
+
+
+/*리본효과*/
 .rb img{height:100vh;z-index: 200;transition: all 0.3s;}
 .rb img:nth-child(1){position: fixed;top: 0;left: -20%;}
 .rb img:nth-child(2){position: fixed;top: 0;right:-20%;}
@@ -96,11 +134,15 @@ z-index: -100;
 .rb.on img:nth-child(2){right:0%}
 
 
+
+/*본문내용*/
 article {width:400px; position: absolute;top: 30%;left:50%;transform: translateX(-50%) translateY(-50%);padding:1rem;box-sizing: border-box;color:#fff;}
 article h2{font-size: 2rem; text-align: center;font-family:'Abril Fatface', cursive;}
 article p{padding-top:1rem;font-family: 'Roboto', sans-serif;line-height: 1.5;text-align: justify;}
 
 
+
+/*스페셜오더*/
 .specialOrder{width:400px;height:320px;position: absolute;top: 65%;left:50%;transform: translateX(-50%) translateY(-50%);padding:1rem;box-sizing: border-box;background-color: rgba(255,255,255,0.9);border-radius: 3px;
 }
 table{width: 100%;height;100%;}
@@ -118,6 +160,7 @@ font-weight: bold;
 text-align:center;
 border-radius:2px;
 }
+input[type=submit]:hover {background-color: #861040;}
 input[type=text],input[type=tel],input[type=date]{
 width: 80%;
 height: 1rem;
@@ -142,7 +185,7 @@ border: none;
     
 }
 
-@media screen and (max-width: 414px)
+@media screen and (max-width: 600px)
 {
     #gnb {display: none;}
     
