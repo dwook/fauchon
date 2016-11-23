@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title> Fauchon </title>	
 	<link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300" rel="stylesheet">
        
     	
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
@@ -78,18 +79,26 @@
     </div>
 
     <div id="box6" class="box">
+       
+        <article>
+           <h2>Special Order</h2>
+           <p>FAUCHON personalizes your gift box according to your needs and your client. Please discover below some of our suggestions and contact us to bring to reality your ideas and the gift of your dreams. </p>
+        </article>
         <div class="specialOrder">
             <form method="post">
                 <table>
-                    <tr><th>Name</th></tr>
-                    <tr><td><input type="text" name="name" /></td></tr>
-                    <tr><th>Email</th></tr>
-                    <tr><td><input type="text" name="email" /></td></tr>
-                    <tr><th>Telephone</th></tr>
-                    <tr><td><input type="text" name="email" /></td></tr>
-                    <tr><th>Your request</th></tr>
-                    <tr><td><textarea name="msg" cols="60" rows="5"></textarea></td></tr>
-                    <tr><td style="text-align:center;"><input type="submit" value="SUBMIT" /></td></tr>
+                    <tr><th>Last name</th><th>First name</th</tr>
+                    <tr><td><input type="text" name="Lname"/></td><td><input type="text" name="Fname"/></td></tr>
+                    
+                    <tr><th>Email</th><th>Telephone</th></tr>
+                    <tr><td><input type="text" name="email" /></td><td><input type="tel" name="tel" /></td></tr>
+                    
+                    <tr><th>Date envisaged</th><th></th></tr>
+                    <tr><td><input type="date" name="date" /></td><td></td></tr>
+                    
+                    <tr><th colspan="2">Your request</th></tr>
+                    <tr><td colspan="2"><textarea name="msg" cols="60" rows="5"></textarea></td></tr>
+                    <tr><td colspan="2"><input type="submit" value="SUBMIT" /></td></tr>
                 </table>
             </form>
         </div>
